@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ html { font-size: 62,5%;
+
+ }
+
+    
+
+}
+
+header {
+
+    text-align: center;
+}
+
+
+article {
+    font-size: 10px;
+    margin-top: 60px;
+    
+    
+    
+    color: #000000;
+
+}
+
+h1 {
+  
+    
+    
+    color: #000000;
+    font-size: 70px;
+    margin-top: 60px;
+    font-family: Didact Gothic;
+   
+}
+
+img {
+    margin-top: 60px;
+}
+
+
+
+ h2 {
+     margin-top: 80px;
+   
+   
+    font-size: 100px;
+    font-family: Work Sans;
+  
+
+
+ }
+
+ section {
+
+    padding:18vh 15vw;
+ }
+
+  .orbis {
+    margin-top: 50px;
+    
+    background-image: url(./img/foto2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.orbis p, h3 {
+    color: #9E9E9E;
+    font-family: Work Sans;
+
+
+
+
+}
+
+.orbis h2 , a {
+    color: #FFF;
+    font-family: Fjalla One;
+    font-size: 20px;
+
+}
+.orbis h2 {
+    font-size:112px ;
+}
+
+.orbis a {
+    font-size: 16px;
+}
+
+
+
+
+.orbis h3 {
+    margin: 50px;
+
+}
+
+ 
+
+
+
