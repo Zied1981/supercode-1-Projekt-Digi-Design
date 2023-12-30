@@ -1,106 +1,207 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
- html { font-size: 62,5%;
-
- }
-
-    
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url(./assets/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: didact gothic;
+  src: url(./assets/fonts/DidactGothic-Regular.ttf);
+}
+@font-face {
+  font-family: fjalla one;
+  src: url(./assets/fonts/FjallaOne-Regular.ttf);
+}
+
+/* ! header */
 
 header {
-
-    text-align: center;
+  text-align: center;
 }
 
+header p {
+  font-size: 10px;
+  margin-bottom: 60px;
+  margin-top: 10px;
 
-article {
-    font-size: 10px;
-    margin-top: 60px;
-    
-    
-    
-    color: #000000;
-
+  color: #000000;
+  font-family: Worksans;
 }
 
 h1 {
-  
-    
-    
-    color: #000000;
-    font-size: 70px;
-    margin-top: 60px;
-    font-family: Didact Gothic;
-   
+  color: #000000;
+  font-size: 70px;
+  margin-bottom: 60px;
+  font-family: Worksans;
 }
 
-img {
-    margin-top: 60px;
+header img {
+  margin-bottom: 60px;
 }
 
+header h2 {
+  margin-bottom: 60px;
 
+  font-size: 70px;
+  font-family: WorkSans;
+  text-transform: uppercase;
+  font-style: normal;
+}
+/* ! orbis */
 
- h2 {
-     margin-top: 80px;
-   
-   
-    font-size: 100px;
-    font-family: Work Sans;
-  
-
-
- }
-
- section {
-
-    padding:18vh 15vw;
- }
-
-  .orbis {
-    margin-top: 50px;
-    
-    background-image: url(./img/foto2.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
+.orbis {
+  background-image: url(./img/foto2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
 }
 
-.orbis p, h3 {
-    color: #9E9E9E;
-    font-family: Work Sans;
-
-
-
-
+h2 {
+  font-family: didact gothic;
+  font-size: 112px;
+  margin-bottom: 40px;
 }
 
-.orbis h2 , a {
-    color: #FFF;
-    font-family: Fjalla One;
-    font-size: 20px;
-
-}
-.orbis h2 {
-    font-size:112px ;
+.dark h2 {
+  color: #fff;
 }
 
-.orbis a {
-    font-size: 16px;
+.white h2 {
+  color: #000;
 }
 
+.wrapper a {
+  font-size: 16px;
 
-
-
-.orbis h3 {
-    margin: 50px;
-
+  height: 52px;
+  font-family: fjalla one;
+  margin-bottom: 120px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 16px 26px 16px 26px;
+  display: inline-block;
 }
 
- 
+.dark a {
+  color: #fff;
+}
+.white a {
+  color: #000;
+  border: 2px solid black;
+}
 
+.number {
+  font-size: 165px;
+  font-family: fjalla one;
+  letter-spacing: -3.3px;
+  position: absolute;
+  right: 120px;
+  bottom: 100px;
+}
+.white .number {
+  color: #666;
+  opacity: 0.9px;
+}
+.dark .number {
+  color: #9e9e9e;
+}
+.wrapper {
+  height: 90vh;
+  position: relative;
+  padding-top: 200px;
+  padding-left: 200px;
+}
+.white .wrapper {
+  height: 100vh;
+}
+.wrapper article p {
+  color: #9e9e9e;
+  font-family: WorkSans;
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin-bottom: 80px;
+}
 
+.orbis .wrapper h3 {
+  margin-bottom: 100px;
+}
 
+/* ! rollr  */
+.rollr {
+  background-image: url(./img/foto3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* ! galitos  */
+
+.galitos {
+  background-image: url(./img/foto4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+
+/* ! tretto  */
+.tretto {
+  background-image: url(./img/foto5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.what {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+.what h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Worksans;
+  font-size: 180px;
+  position: relative;
+  margin-top: 130px;
+  margin: auto;
+  letter-spacing: -18px;
+}
+.what p {
+  color: #666;
+  font-family: Worksans;
+  line-height: 40px;
+  padding-left: 500px;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+.what a {
+  color: #fff;
+  font-family: Worksans;
+  font-size: 40px;
+  padding-left: 500px;
+}
+
+footer {
+  background-color: white;
+
+  text-align: center;
+  font-size: 100px;
+}
+ul li a {
+  color: black;
+  position: relative;
+  top: 100px;
+}
+ul li a :nth-last-of-type(1) {
+  margin-bottom: 40px;
+}
