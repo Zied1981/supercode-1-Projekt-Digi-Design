@@ -29,32 +29,36 @@ header {
 }
 
 header p {
-  font-size: 10px;
+  font-size: 20px;
   margin-bottom: 60px;
   margin-top: 10px;
 
-  color: #000000;
+  color: #000;
   font-family: Worksans;
 }
 
 h1 {
   color: #000000;
-  font-size: 70px;
+  font-size: 100px;
   margin-bottom: 60px;
-  font-family: Worksans;
+  font-family: didact gothic;
+  letter-spacing: -2px;
 }
 
 header img {
-  margin-bottom: 60px;
+  margin-bottom: 118px;
+  border: 0px solid #000;
 }
 
 header h2 {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 
-  font-size: 70px;
+  font-size: 160px;
   font-family: WorkSans;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-style: normal;
+  color: #000;
+  line-height: normmal;
 }
 /* ! orbis */
 
@@ -97,6 +101,16 @@ h2 {
 .white a {
   color: #000;
   border: 2px solid black;
+}
+
+.dark a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.white a:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .number {
@@ -160,6 +174,8 @@ h2 {
   min-height: 100vh;
 }
 
+/*  ! what */
+
 .what {
   background-color: black;
   background-size: cover;
@@ -169,39 +185,39 @@ h2 {
 .what h2 {
   color: #fff;
   text-align: center;
-  font-family: Worksans;
+  font-family: Work sans;
   font-size: 180px;
   position: relative;
   margin-top: 130px;
   margin: auto;
   letter-spacing: -18px;
+  margin-bottom: 150px;
 }
 .what p {
   color: #666;
   font-family: Worksans;
   line-height: 40px;
-  padding-left: 500px;
-  font-size: 20px;
-  margin-bottom: 100px;
+  padding-left: 640px;
+  font-size: 22px;
+  margin-bottom: 70px;
+  letter-spacing: 0.22px;
 }
 .what a {
   color: #fff;
-  font-family: Worksans;
+  font-family: Work sans;
   font-size: 40px;
-  padding-left: 500px;
+  padding-left: 640px;
+  text-decoration: none;
 }
 
 footer {
   background-color: white;
-
-  text-align: center;
-  font-size: 100px;
 }
-ul li a {
+
+li a {
   color: black;
   position: relative;
-  top: 100px;
-}
-ul li a :nth-last-of-type(1) {
-  margin-bottom: 40px;
+  font-family: didact gothic;
+  font-size: 160px;
+  text-decoration: none;
 }
