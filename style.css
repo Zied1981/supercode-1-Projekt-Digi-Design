@@ -199,7 +199,7 @@ h2 {
   color: #fff;
   text-align: center;
   font-family: "Worksans", sans-serif;
-  font-size: clamp(14rem, 20vw, 19rem);
+  font-size: clamp(14rem, 18vw, 19rem);
   position: relative;
   margin-top: 130px;
   margin: auto;
@@ -245,13 +245,14 @@ li a:hover {
 }
 
 .heart {
-  font-size: 10px;
-  color: #000;
-  animation: pulse 0.15s infinite alternate;
+  font-size: 50px;
+  color: black;
+  animation: beat.50s infinite alternate;
   transform-origin: center;
+  animation-duration: 0.1ms;
 }
 
-@keyframes pulse {
+@keyframes beat {
   to {
     transform: scale(1.4);
   }
