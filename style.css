@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 400;
 }
 
 html {
@@ -9,16 +10,16 @@ html {
 }
 
 @font-face {
-  font-family: WorkSans;
+  font-family: "WorkSans";
   src: url(./assets/WorkSans-VariableFont_wght.ttf);
 }
 
 @font-face {
-  font-family: didact gothic;
+  font-family: "didact gothic";
   src: url(./assets/fonts/DidactGothic-Regular.ttf);
 }
 @font-face {
-  font-family: fjalla one;
+  font-family: "fjalla one";
   src: url(./assets/fonts/FjallaOne-Regular.ttf);
 }
 
@@ -34,14 +35,14 @@ header p {
   margin-top: 10px;
 
   color: #000;
-  font-family: Worksans;
+  font-family: "Worksans", sans-serif;
 }
 
 h1 {
   color: #000000;
   font-size: 100px;
   margin-bottom: 60px;
-  font-family: didact gothic;
+  font-family: "didact gothic", sans-serif;
   letter-spacing: -2px;
 }
 
@@ -54,23 +55,25 @@ header h2 {
   /* margin-bottom: 60px; */
 
   font-size: 160px;
-  font-family: WorkSans;
+  font-family: "Worksans", sans-serif;
   /* text-transform: uppercase; */
   font-style: normal;
   color: #000;
-  line-height: normmal;
+  /* line-height: normmal; */
+  font-weight: 400;
 }
 /* ! orbis */
 
 .orbis {
   background-image: url(./img/foto2.jpeg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 90vh;
 }
 
 h2 {
-  font-family: didact gothic;
+  font-family: "didact gothic", sans-serif;
   font-size: 112px;
   margin-bottom: 40px;
 }
@@ -107,10 +110,17 @@ h2 {
   background-color: #fff;
   color: #000;
 }
-
 .white a:hover {
   background-color: #000;
   color: #fff;
+}
+
+.dark a:hover + .number-dark {
+  color: #fff;
+}
+
+.white a:hover + .number-white {
+  color: #000;
 }
 
 .number {
@@ -139,7 +149,7 @@ h2 {
 }
 .wrapper article p {
   color: #9e9e9e;
-  font-family: WorkSans;
+  font-family: "Worksans", sans-serif;
   font-size: 20px;
   letter-spacing: -1px;
   margin-bottom: 80px;
@@ -152,6 +162,7 @@ h2 {
 /* ! rollr  */
 .rollr {
   background-image: url(./img/foto3.png);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -161,6 +172,7 @@ h2 {
 
 .galitos {
   background-image: url(./img/foto4.jpeg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 90vh;
@@ -169,6 +181,7 @@ h2 {
 /* ! tretto  */
 .tretto {
   background-image: url(./img/foto5.png);
+  background-attachment: fixed;
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -185,8 +198,8 @@ h2 {
 .what h2 {
   color: #fff;
   text-align: center;
-  font-family: Work sans;
-  font-size: 180px;
+  font-family: "Worksans", sans-serif;
+  font-size: clamp(14rem, 20vw, 19rem);
   position: relative;
   margin-top: 130px;
   margin: auto;
@@ -195,7 +208,7 @@ h2 {
 }
 .what p {
   color: #666;
-  font-family: Worksans;
+  font-family: "Worksans", sans-serif;
   line-height: 40px;
   padding-left: 640px;
   font-size: 22px;
@@ -204,20 +217,42 @@ h2 {
 }
 .what a {
   color: #fff;
-  font-family: Work sans;
+  font-family: "Worksans", sans-serif;
   font-size: 40px;
   padding-left: 640px;
   text-decoration: none;
 }
 
+.what a:hover {
+  text-decoration: underline;
+}
+
 footer {
   background-color: white;
+  text-align: center;
 }
 
 li a {
   color: black;
   position: relative;
-  font-family: didact gothic;
+  font-family: "didact gothic", sans-serif;
   font-size: 160px;
   text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.heart {
+  font-size: 10px;
+  color: #000;
+  animation: pulse 0.15s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(1.4);
+  }
 }
